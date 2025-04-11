@@ -1,0 +1,38 @@
+
+.tt-events-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 576px) {
+  .tt-events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .tt-events-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tt-event-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tt-event-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.tt-event-card h3 {
+  font-size: 1.2rem;
+}
+
+.tt-event-card .lbl {
+  font-size: 1rem;
+}
